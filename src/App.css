@@ -1,0 +1,124 @@
+.card-style{
+  background-color: #081741;
+  color: bisque;
+  outline: black;
+}
+
+.search-button{
+ float: right;
+ outline: white 1px;
+ background-color: #081741;
+ color: bisque;
+}
+
+.button:hover{
+  color: #081741;
+  background-color: beige;
+}
+
+.jumbo{
+  background-color: #081741;
+  color: bisque;
+}
+
+h1, h3{
+  color: bisque;
+ }
+
+.title{
+  color: #081741;
+  text-align: center;
+}
+
+.footer{
+  background-color: #081741;
+  color: bisque;
+  margin: 2px auto 0 auto; 
+  padding: 10px 0px 10px 0px;
+}
+
+p{
+  font-size: medium;
+  color: white;
+  margin: 0px 0px;
+}
+
+a{
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+.navbar-dark {
+  background-color:#081741;
+  color: bisque;
+} 
+
+.nav-link{
+  font-size: 30px;
+}
+
+.movie-card{
+  background-color: #081741;
+  padding: 4px;
+}
+
+.list-group{
+  color: #081741;
+  background-color: rgb(245, 235, 223);
+}
+
+.link-to-search{
+  color: #081741;
+}
+
+.button{
+  outline: white 1px;
+  background-color: #081741;
+  color: bisque;
+}
+
+/* .image{
+  height: rem;
+} */
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

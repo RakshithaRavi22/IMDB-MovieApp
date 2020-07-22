@@ -1,0 +1,24 @@
+.container .search{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-label{
+    position: relative;
+}
+
+.input-style{
+    width: 300%;
+    font-size: 30px;
+    box-sizing: border-box;
+    
+}
+
+.search-icon{
+    position: absolute;
+    top: 11px;
+    font-size: 24px;
+    color: #555;
+    right: 100px;
+}
