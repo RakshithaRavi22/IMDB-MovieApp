@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {fetchMovie, setLoading} from '../actions/searchActions';
 import {Link} from 'react-router-dom';
-import { Spinner } from './Spinner';
 import { CardImg, Card, ListGroup,ListGroupItem, Button} from 'reactstrap';
 
 class Movie extends Component{
@@ -49,7 +48,7 @@ class Movie extends Component{
         </div>     
       );
       
-      let content = loading? <Spinner /> : movieInfo;
+      let content = loading ? null : movieInfo 
     
       return(
           <div>

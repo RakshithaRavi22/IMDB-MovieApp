@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Spinner} from './Spinner';
 import Movies from './Movies';
 
-class Landing extends Component{
+class Home extends Component{
     render(){
 
         const {loading}= this.props;
@@ -22,4 +22,4 @@ const mapStatetoProps = state => ({
     loading: state.movies.loading
 })
 
-export default connect(mapStatetoProps)(Landing);
+export default connect(mapStatetoProps)(Home);

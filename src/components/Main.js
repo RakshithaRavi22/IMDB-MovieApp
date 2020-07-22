@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Switch, Redirect, Route} from 'react-router-dom';
 import Header from './Header';
 import Footer from "./Footer";
-import Landing from "./Landing";
+import Home from "./Home";
 import Movie from "./Movie";
 
 class Main extends Component{
@@ -12,7 +12,7 @@ class Main extends Component{
             <div>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Landing}></Route>
+                    <Route exact path="/" component={Home}></Route>
                     <Route path="/movie/:id" component={Movie} />
                     <Redirect path="/" />
                 </Switch>
