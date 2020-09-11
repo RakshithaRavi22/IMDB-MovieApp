@@ -22,7 +22,7 @@ class Search extends Component{
             <div className="container">
                <h1> <span className="fa fa-search"></span> Search for Movies, TV Shows...</h1>
                <br />
-                <Form className="searh-form" onSubmit={this.onSubmit}>
+                <Form className="search-form" onSubmit={this.onSubmit}>
                   <Input
                   type="text" 
                   className="form"
@@ -32,7 +32,7 @@ class Search extends Component{
                 </Form>
                 <Button className="search-button button mt-3"
                 type="submit"
-                value="submit" color="primary">Search</Button> <br />
+                value="submit" color="primary" onClick={this.onSubmit}>Search</Button> <br />
             </div>
           </Jumbotron>
         </React.Fragment>

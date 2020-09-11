@@ -4,7 +4,6 @@ body{
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-
 .card-style{
   background-color: #081741;
   color: bisque;
@@ -96,7 +95,78 @@ a:hover {
 .row{
   justify-content: space-between;
   align-items: center;
-  
+}
+
+.row-movie{
+  margin: 20px 70px 0px 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.poster{
+  width: 45%;
+  /* float: left; */
+  margin-right: 20px
+}
+
+.detail{
+  width: 50%;
+  /* float: right; */
+  margin-left: 25px;
+}
+
+.poster-height{
+  height: 32.75rem;
+}
+
+.back-button-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.back-button{
+  background-color: bisque;
+  /* color: #081741; */
+}
+
+.back-button:hover{
+  background-color: bisque;
+  /* color: #081741; */
+}
+
+@media only screen and (max-width: 1003px) {
+  .row-movie{
+   display: flex;
+   flex-direction: column;
+   grid-row: 1 0;
+  }
+  .detail{
+    margin-top: 20px;
+    margin-left: 0;
+    width: auto;
+  }
+  .poster-height{
+    height: 30rem;
+  }
+  .poster{
+    margin: 0;
+    width: auto;
+  }
+  .title{
+    align-content: center;
+  }
+}
+
+h6{
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1015px){
+  .poster-height{
+    height: 37.4rem;
+  }
 }
 
 /* .image{

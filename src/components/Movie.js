@@ -16,15 +16,15 @@ class Movie extends Component{
       const {loading, movie} = this.props;
 
       let movieInfo = (
-        <div className="container">
+        <div>
           <h1 className="title"> {movie.Title} </h1>
-          <div className="row">   
-              <div className="col-md-7 m-1 mt-3">
+          <div className="row-movie">   
+              <div className=" poster">
                 <Card className="movie-card" body outline color="dark">
-                  <CardImg style={{ height: "35rem" }} src={movie.Poster}></CardImg>
+                  <CardImg className="poster-height" src={movie.Poster}></CardImg>
                 </Card>
               </div>
-              <div className="col-md-9 mt-4">               
+              <div className=" detail">               
                 <ListGroup>
                     <ListGroupItem className="list-group"><strong>Genre: </strong>{movie.Genre}</ListGroupItem>
                     <ListGroupItem className="list-group"><strong>Released: </strong>{movie.Released}</ListGroupItem>
@@ -39,12 +39,17 @@ class Movie extends Component{
                 </ListGroup>
                  <br />
                 <Button className="button" href={'https://www.imdb.com/title/' + movie.imdbID}> Click for more info... </Button>
-                <hr />
-                <Link to="/" className="link-to-search">
-                  <h6><span className="fa fa-caret-left"></span> Back to Search</h6>
-                </Link>
               </div>
           </div>
+          <div className="back-button-div">
+            <Button className="back-button">
+            <Link to="/" className="link-to-search">
+                  <h6><span className="fa fa-caret-left"></span> Back to Search</h6>
+          </Link>
+          </Button>
+          </div>
+          
+          
         </div>     
       );
       
