@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {  Card, CardImg, CardTitle, CardBody,  Button } from 'reactstrap';
 import {Link} from 'react-router-dom';
+import Error from './Error';
 
 class Movies extends Component {
    
@@ -32,7 +33,12 @@ class Movies extends Component {
                     <this.movieCard movie={movie} /> 
             </div> ) : null ; 
             if(movies.Response==='False'){
-                 alert("Movie or TVShow entered does not exist");
+                 //alert("Movie or TVShow entered does not exist");
+                 return(
+                     <div>
+                         <Error />
+                     </div>
+                 );
             }
         
 

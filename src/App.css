@@ -169,6 +169,12 @@ h6{
   }
 }
 
+
+.error{
+  color: crimson;
+  margin-bottom: 20px;
+}
+
 /* .image{
   height: rem;
 } */

@@ -24,7 +24,7 @@ class Movie extends Component{
                   <CardImg className="poster-height" src={movie.Poster}></CardImg>
                 </Card>
               </div>
-              <div className=" detail">               
+              <div className="detail">               
                 <ListGroup>
                     <ListGroupItem className="list-group"><strong>Genre: </strong>{movie.Genre}</ListGroupItem>
                     <ListGroupItem className="list-group"><strong>Released: </strong>{movie.Released}</ListGroupItem>
